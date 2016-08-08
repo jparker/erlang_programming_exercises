@@ -6,6 +6,7 @@ bump(List) -> bump(List, []).
 bump([], Acc) -> reverse(Acc);
 bump([H|T], Acc) -> bump(T, [H+1 | Acc]).
 
+avg([])   -> 0;
 avg(List) -> avg(List, 0, 0).
 
 avg([], Sum, Len)    -> Sum / Len;

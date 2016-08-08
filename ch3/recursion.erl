@@ -4,6 +4,7 @@
 bump([])    -> [];
 bump([H|T]) -> [H+1 | bump(T)].
 
+avg([])   -> 0;
 avg(List) -> sum(List) / len(List).
 
 sum([])    -> 0;
